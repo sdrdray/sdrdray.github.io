@@ -1,0 +1,20 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-github-dark text-[#f0f6fc];
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-github-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#30363d] rounded;
+}
