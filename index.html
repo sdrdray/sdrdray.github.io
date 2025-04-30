@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subhradip Debray | Web Developer & ML Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">Subhradip Debray</div>
+    <header id="main-header">
+        <nav class="container">
+            <a href="#" class="logo">Subhradip();</a> {/* Slightly Dev-themed logo */}
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -20,201 +23,198 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger"> <div class="line1"></div>
+            <div class="burger">
+                <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
         </nav>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1 data-aos="fade-down">Subhradip Debray</h1>
-            <p data-aos="fade-up" data-aos-delay="200">I'm a <span class="typed-text"></span></p>
-             <div class="social-links-hero" data-aos="fade-up" data-aos-delay="400">
-                <a href="https://www.linkedin.com/in/subhradip-debray200X/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:subhradipdray@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                </div>
-            <a href="#projects" class="cta-button" data-aos="fade-up" data-aos-delay="600">View My Work</a>
+    <section id="hero" class="gsap-hero">
+         {/* Gradient Background Element */}
+         <div class="hero-gradient-bg"></div>
+        <div class="hero-content container">
+            <h1 class="gsap-hero-item">Subhradip Debray</h1>
+            <p class="gsap-hero-item">I build things for the web as a <span class="typed-text"></span></p>
+             <div class="social-links-hero gsap-hero-item">
+                <a href="https://www.linkedin.com/in/subhradip-debray200X/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:subhradipdray@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+                {/* Add GitHub link! */}
+                 <a href="https://github.com/sdrdray" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="#projects" class="cta-button gsap-hero-item">View My Work <i class="fas fa-arrow-right"></i></a>
         </div>
-        </section>
+         {/* Optional: Add subtle animation element here */}
+    </section>
 
     <main>
-        <section id="about" class="container">
-            <h2 data-aos="fade-right">About Me</h2>
-            <div class="about-content" data-aos="fade-left">
+        {/* About Section */}
+        <section id="about" class="container section-padding">
+            <h2 class="section-title gsap-fade-up">About Me</h2>
+            <div class="about-content gsap-fade-up">
+                 {/* Optional Avatar: <img src="your-avatar.jpg" alt="Subhradip Debray" class="avatar"> */}
                 <p>Motivated and results-driven BTech Computer Science Engineering student specializing in AI-ML, with hands-on experience in machine learning, web development, and data-driven problem-solving. Proven ability to design and deploy innovative solutions using advanced algorithms and modern frameworks.</p>
-                <p>Seeking a challenging role in Machine Learning or Web Development to leverage technical expertise and experience.</p>
+                <p>Seeking challenging roles in <strong>Machine Learning</strong> or <strong>Web Development</strong> to leverage technical expertise and contribute to impactful projects.</p>
                 <p><strong>Languages:</strong> English, Bengali, Hindi, French (Basic)</p>
             </div>
         </section>
 
-        <section id="experience" class="container">
-            <h2 data-aos="fade-right">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
+        {/* Experience Section */}
+        <section id="experience" class="container section-padding">
+            <h2 class="section-title gsap-fade-up">Experience</h2>
+            <div class="timeline gsap-stagger-items"> {/* Target for stagger */}
+                {/* Use data-lag for potential parallax effect within timeline */}
+                <div class="timeline-item gsap-timeline-item">
                     <div class="timeline-content">
                         <h3>Web Development Intern</h3>
-                        <span class="timeline-company">Unified Mentor, Gurugram, Haryana (Remote)</span>
+                        <span class="timeline-company">Unified Mentor, Gurugram (Remote)</span>
                         <span class="timeline-date">Jan 2025 – Mar 2025</span>
                         <ul>
-                            <li>Developed responsive web applications using Next.js, React, TypeScript, and Firebase, ensuring seamless user authentication and real-time data updates.</li>
-                            <li>Collaborated with teams to implement modern UI/UX designs using Tailwind CSS and shadcn/ui.</li>
+                            <li>Developed responsive web apps: Next.js, React, TypeScript, Firebase.</li>
+                            <li>Implemented modern UI/UX with Tailwind CSS & shadcn/ui.</li>
+                            <li>Handled user authentication & real-time data updates.</li>
                         </ul>
                     </div>
                 </div>
-                 <div class="timeline-item" data-aos="fade-up">
+                 <div class="timeline-item gsap-timeline-item">
                     <div class="timeline-content">
                         <h3>Machine Learning Intern</h3>
                          <span class="timeline-company">Remote</span>
                         <span class="timeline-date">Nov 2024 – Dec 2024</span>
                          <ul>
-                            <li>Developed and implemented machine learning models for various tasks (add specific detail if possible, e.g., classification, regression).</li>
-                            <li>Preprocessed and analyzed datasets using Python libraries (Pandas, NumPy, Scikit-learn).</li>
-                             <li> Evaluated model performance and optimized hyperparameters.</li>
+                             <li>Developed & implemented ML models for classification/regression tasks.</li>
+                             <li>Performed data preprocessing & analysis (Pandas, NumPy, Scikit-learn).</li>
+                             <li>Evaluated model performance & performed hyperparameter tuning.</li>
                         </ul>
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
 
-        <section id="projects" class="container">
-            <h2 data-aos="fade-right">Projects</h2>
-            <div class="project-grid">
-                <div class="project-card" data-aos="fade-up">
+        {/* Projects Section */}
+        <section id="projects" class="container section-padding">
+            <h2 class="section-title gsap-fade-up">Projects</h2>
+            <div class="project-grid gsap-stagger-items"> {/* Target for stagger */}
+                <div class="project-card gsap-project-item">
                     <h3>UrbanNest: Real Estate WebApp</h3>
-                    <p>Led end-to-end development of a real estate platform featuring property listings, interactive maps, role-based access.</p>
-                    <span class="tech-stack">Next.js, Firebase, Leaflet.js, Tailwind CSS</span>
-                    </div>
-                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <p>End-to-end development of a real estate platform with listings, interactive maps (Leaflet.js), and role-based access.</p>
+                    <div class="tech-stack"><span>Next.js</span><span>Firebase</span><span>Leaflet.js</span><span>Tailwind</span></div>
+                    {/* <a href="#" class="project-link">View Live <i class="fas fa-external-link-alt"></i></a> */}
+                </div>
+                 <div class="project-card gsap-project-item">
                     <h3>Mall Management WebApp</h3>
-                    <p>Automated mall operations, centralized shop, event, and parking management. Integrated customer portals for bookings and lost-and-found services.</p>
-                    <span class="tech-stack">React, Next.js, Firebase, TypeScript</span>
-                     </div>
-                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <p>Automated mall operations: shop, event, parking management. Customer portal for bookings & lost/found.</p>
+                    <div class="tech-stack"><span>React</span><span>Next.js</span><span>Firebase</span><span>TypeScript</span></div>
+                </div>
+                 <div class="project-card gsap-project-item">
                     <h3>Hospital Management WebApp</h3>
-                    <p>Designed a role-based system streamlining appointment scheduling, medical records, and billing.</p>
-                    <span class="tech-stack">React, Next.js, Firebase, Tailwind CSS</span>
-                     </div>
-                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <p>Role-based system streamlining appointments, medical records, and billing processes.</p>
+                    <div class="tech-stack"><span>React</span><span>Next.js</span><span>Firebase</span><span>Tailwind</span></div>
+                </div>
+                 <div class="project-card gsap-project-item">
                     <h3>Weather Image Classification</h3>
-                    <p>Trained a CNN model (EfficientNet) using TensorFlow to classify weather images with 92% accuracy, leveraging data augmentation and transfer learning.</p>
-                    <span class="tech-stack">Python, TensorFlow, Keras, EfficientNet, OpenCV</span>
-                     </div>
-            </div>
-        </section>
-
-        <section id="skills" class="container">
-             <h2 data-aos="fade-right">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C/C++</li>
-                        <li>JavaScript</li>
-                        <li>MATLAB</li>
-                    </ul>
-                </div>
-                 <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Machine Learning</h3>
-                    <ul>
-                        <li>TensorFlow</li>
-                        <li>Keras</li>
-                        <li>Scikit-learn</li>
-                        <li>Data Preprocessing</li>
-                        <li>Model Optimization</li>
-                        <li>Neural Networks</li>
-                         <li>Data Analysis</li>
-                    </ul>
-                </div>
-                 <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Firebase</li>
-                        <li>Flask</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>TypeScript</li>
-                        <li>Tailwind CSS</li>
-                    </ul>
-                </div>
-                 <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Analytical Skills</h3>
-                     <ul>
-                        <li>Data Analysis & Visualization</li>
-                        <li>Process Optimization</li>
-                        <li>Cost-Benefit Analysis</li>
-                     </ul>
+                    <p>CNN model (EfficientNet) trained via transfer learning (TensorFlow/Keras) achieving 92% accuracy on weather image classification.</p>
+                    <div class="tech-stack"><span>Python</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span></div>
+                     {/* <a href="#" class="project-link">View Code <i class="fab fa-github"></i></a> */}
                 </div>
             </div>
         </section>
 
-         <section id="education" class="container">
-            <h2 data-aos="fade-right">Education</h2>
-             <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content education-content">
-                        <h3>Bachelor of Technology (BTech) - Computer Science</h3>
-                        <span class="timeline-company">Amity University, Noida</span>
+        {/* Skills Section */}
+        <section id="skills" class="container section-padding">
+             <h2 class="section-title gsap-fade-up">Technical Skills</h2>
+            <div class="skills-grid gsap-stagger-items"> {/* Target for stagger */}
+                <div class="skill-category gsap-skill-item">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <ul><li>Python</li><li>Java</li><li>C/C++</li><li>JavaScript</li><li>MATLAB</li></ul>
+                </div>
+                 <div class="skill-category gsap-skill-item">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <ul><li>TensorFlow</li><li>Keras</li><li>Scikit-learn</li><li>Data Preprocessing</li><li>Model Optimization</li><li>Neural Networks</li><li>Data Analysis</li></ul>
+                </div>
+                 <div class="skill-category gsap-skill-item">
+                     <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                    <ul><li>React</li><li>Next.js</li><li>Firebase</li><li>Flask</li><li>HTML/CSS</li><li>TypeScript</li><li>Tailwind</li></ul>
+                </div>
+                 <div class="skill-category gsap-skill-item">
+                    <h3><i class="fas fa-chart-line"></i> Analytical</h3>
+                     <ul><li>Data Visualization</li><li>Process Optimization</li><li>Cost-Benefit Analysis</li></ul>
+                </div>
+            </div>
+        </section>
+
+         {/* Education Section */}
+        <section id="education" class="container section-padding">
+            <h2 class="section-title gsap-fade-up">Education</h2>
+             <div class="timeline gsap-stagger-items"> {/* Target for stagger */}
+                 <div class="timeline-item gsap-timeline-item">
+                     <div class="timeline-content education-content">
+                         <h3>BTech - Computer Science (Hons. AI & ML)</h3>
+                         <span class="timeline-company">Amity University, Noida</span>
                          <span class="timeline-date">Aug 2022 - Aug 2026 (Expected)</span>
-                        <p>Specialization: AI & ML (Hons.) | Minor: AI-ML</p>
-                        <p>Relevant Coursework: Machine Learning, Data Structures, Neural Networks, Data Analysis, Python Programming</p>
-                    </div>
-                </div>
-                 <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content education-content">
-                        <h3>Higher Secondary (12th Science - PCMB)</h3>
+                         <p>Minor: AI-ML | Relevant Courses: ML, DS, NN, Data Analysis, Python</p>
+                     </div>
+                 </div>
+                 <div class="timeline-item gsap-timeline-item">
+                     <div class="timeline-content education-content">
+                         <h3>Higher Secondary (Science - PCMB)</h3>
                          <span class="timeline-company">Sri Sri Ravishankar Vidyamandir, Agartala</span>
-                        <span class="timeline-date">May 2020 - Jul 2022</span>
-                        <p>Score: 88%</p>
-                    </div>
-                </div>
-                 <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-content education-content">
-                        <h3>Secondary Level (10th CBSE)</h3>
+                         <span class="timeline-date">2020 - 2022 | Score: 88%</span>
+                     </div>
+                 </div>
+                  <div class="timeline-item gsap-timeline-item">
+                     <div class="timeline-content education-content">
+                        <h3>Secondary Level (CBSE)</h3>
                          <span class="timeline-company">Sri Sri Ravishankar Vidyamandir, Agartala</span>
-                        <span class="timeline-date">Mar 2018 - Jun 2020</span>
-                         <p>Score: 85.2%</p>
+                        <span class="timeline-date">2018 - 2020 | Score: 85.2%</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="certifications" class="container">
-            <h2 data-aos="fade-right">Certifications</h2>
-            <ul class="certification-list" data-aos="fade-left">
-                <li>Accenture North America Coding Simulation | Forage | Dec 2024</li>
-                <li>Modern REST API with PHP 8 | Udemy | Dec 2024</li>
-                <li>Python & Django Framework | Udemy | Apr 2024</li>
-                </ul>
+        {/* Certifications Section (Simplified for visual flow) */}
+        <section id="certifications" class="container section-padding">
+            <h2 class="section-title gsap-fade-up">Certifications</h2>
+            <div class="certification-list gsap-stagger-items"> {/* Target for stagger */}
+                <div class="certification-item gsap-cert-item">Accenture NA Coding Simulation (Forage)</div>
+                <div class="certification-item gsap-cert-item">Modern REST API with PHP 8 (Udemy)</div>
+                <div class="certification-item gsap-cert-item">Python & Django Framework (Udemy)</div>
+            </div>
         </section>
 
-        <section id="contact" class="container">
-            <h2 data-aos="fade-right">Get In Touch</h2>
-            <p data-aos="fade-up">Feel free to reach out via email or connect with me on LinkedIn.</p>
-             <div class="contact-links" data-aos="fade-up" data-aos-delay="200">
-                 <a href="mailto:subhradipdray@gmail.com" class="contact-button email"><i class="fas fa-envelope"></i> Email Me</a>
-                <a href="https://wa.me/919774486118" target="_blank" class="contact-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                <a href="https://www.linkedin.com/in/subhradip-debray200X/" target="_blank" class="contact-button linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        {/* Contact Section */}
+        <section id="contact" class="section-padding">
+            <div class="contact-gradient-bg"></div>
+            <div class="container contact-content">
+                <h2 class="section-title gsap-fade-up">Get In Touch</h2>
+                <p class="gsap-fade-up">Interested in collaborating or have a question? Feel free to reach out!</p>
+                 <div class="contact-links gsap-stagger-items"> {/* Target for stagger */}
+                     <a href="mailto:subhradipdray@gmail.com" class="contact-button email gsap-contact-item"><i class="fas fa-envelope"></i> Email Me</a>
+                    <a href="https://wa.me/919774486118" target="_blank" class="contact-button whatsapp gsap-contact-item"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://www.linkedin.com/in/subhradip-debray200X/" target="_blank" class="contact-button linkedin gsap-contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                 </div>
              </div>
         </section>
-
     </main>
 
-    <footer>
-        <p>&copy; 2025 Subhradip Debray. All Rights Reserved.</p>
-        <div class="social-links-footer">
-            <a href="https://www.linkedin.com/in/subhradip-debray200X/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:subhradipdray@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <footer id="main-footer">
+        <div class="container">
+            <div class="social-links-footer">
+                 <a href="https://github.com/sdrdray" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/subhradip-debray200X/" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:subhradipdray@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
+            <p>&copy; <span id="current-year"></span> Subhradip Debray. Built with <i class="fas fa-heart" style="color: var(--accent-color);"></i></p>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    {/* GSAP Core and ScrollTrigger Plugin */}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    {/* Typed.js library */}
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    {/* Your Custom JS */}
     <script src="script.js"></script>
 
 </body>
